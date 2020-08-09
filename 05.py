@@ -6,6 +6,12 @@ b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 c = []
 
 if len(a) >= len(b):
-
+    for elem in a:
+        if elem in b:
+            c.append(elem)
 else:
-    for elem in 
+    for elem in b:
+        if elem in a:
+            c.append(elem)
+
+print(c)
